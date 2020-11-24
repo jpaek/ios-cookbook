@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CategoryViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
