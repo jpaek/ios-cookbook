@@ -65,12 +65,41 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="ISq-0n-tLX"/>
                     <connections>
-                        <segue destination="aif-95-dIH" kind="show" id="kqA-RB-EdA"/>
+                        <segue destination="vBi-Xf-dnC" kind="show" id="TMH-Cb-h1s"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1o-gP-IEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="548" y="-56"/>
+        </scene>
+        <!--Youtube Selection View Controller-->
+        <scene sceneID="IT3-5b-bIo">
+            <objects>
+                <tableViewController id="vBi-Xf-dnC" customClass="YoutubeSelectionViewController" customModule="ios_cookbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LKU-tY-mJM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="x87-04-oUB">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x87-04-oUB" id="87w-J1-Cck">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vBi-Xf-dnC" id="dwa-fd-AbO"/>
+                            <outlet property="delegate" destination="vBi-Xf-dnC" id="iZp-hC-fBW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="YQy-y3-JTM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruX-GO-siM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="-56"/>
         </scene>
         <!--Recipe Detail View Controller-->
         <scene sceneID="ADl-pX-25U">
@@ -87,22 +116,6 @@
             </objects>
             <point key="canvasLocation" x="590" y="722"/>
         </scene>
-        <!--New Recipe View Controller-->
-        <scene sceneID="rbg-J6-HG5">
-            <objects>
-                <viewController id="aif-95-dIH" customClass="NewRecipeViewController" customModule="ios_cookbook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qn7-BY-Z8f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="eeI-wa-mNq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="cs2-IU-BZY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="93d-me-GNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1378" y="-70"/>
-        </scene>
         <!--Recipe Edit View Controller-->
         <scene sceneID="hPe-n7-qCc">
             <objects>
@@ -113,10 +126,14 @@
                         <viewLayoutGuide key="safeArea" id="sFT-sv-ucb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XdS-F1-jnz"/>
+                    <connections>
+                        <segue destination="vBi-Xf-dnC" kind="showDetail" id="7hD-S8-gBl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTU-wM-g1W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2133" y="-82"/>
+            <point key="canvasLocation" x="2788" y="-70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hCY-tG-W8R">
@@ -135,6 +152,9 @@
             <point key="canvasLocation" x="-1123" y="-50"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7hD-S8-gBl"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

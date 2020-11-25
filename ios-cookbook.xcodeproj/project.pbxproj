@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1402D5A3256E6BC90092B7C4 /* Cookbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1402D5A1256E6BC90092B7C4 /* Cookbook.xcdatamodeld */; };
 		14BAC22E256CACD100827006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC22D256CACD100827006 /* AppDelegate.swift */; };
 		14BAC230256CACD100827006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC22F256CACD100827006 /* SceneDelegate.swift */; };
 		14BAC232256CACD100827006 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC231256CACD100827006 /* CategoryViewController.swift */; };
@@ -17,7 +18,7 @@
 		14BAC250256CACD300827006 /* ios_cookbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC24F256CACD300827006 /* ios_cookbookUITests.swift */; };
 		14BAC266256CADA600827006 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC265256CADA600827006 /* RecipeListViewController.swift */; };
 		14BAC26E256CAF6000827006 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC26D256CAF6000827006 /* RecipeDetailViewController.swift */; };
-		14BAC273256CAF8200827006 /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC272256CAF8200827006 /* NewRecipeViewController.swift */; };
+		14BAC273256CAF8200827006 /* YoutubeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC272256CAF8200827006 /* YoutubeSelectionViewController.swift */; };
 		14BAC278256CAFD500827006 /* RecipeEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC277256CAFD500827006 /* RecipeEditViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1402D5A2256E6BC90092B7C4 /* Cookbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cookbook.xcdatamodel; sourceTree = "<group>"; };
 		14BAC22A256CACD100827006 /* ios-cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-cookbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BAC22D256CACD100827006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BAC22F256CACD100827006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +57,7 @@
 		14BAC251256CACD300827006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14BAC265256CADA600827006 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		14BAC26D256CAF6000827006 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
-		14BAC272256CAF8200827006 /* NewRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
+		14BAC272256CAF8200827006 /* YoutubeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSelectionViewController.swift; sourceTree = "<group>"; };
 		14BAC277256CAFD500827006 /* RecipeEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		14BAC221256CACD100827006 = {
 			isa = PBXGroup;
 			children = (
+				1402D5A1256E6BC90092B7C4 /* Cookbook.xcdatamodeld */,
 				14BAC22C256CACD100827006 /* ios-cookbook */,
 				14BAC243256CACD300827006 /* ios-cookbookTests */,
 				14BAC24E256CACD300827006 /* ios-cookbookUITests */,
@@ -150,7 +153,7 @@
 				14BAC231256CACD100827006 /* CategoryViewController.swift */,
 				14BAC265256CADA600827006 /* RecipeListViewController.swift */,
 				14BAC26D256CAF6000827006 /* RecipeDetailViewController.swift */,
-				14BAC272256CAF8200827006 /* NewRecipeViewController.swift */,
+				14BAC272256CAF8200827006 /* YoutubeSelectionViewController.swift */,
 				14BAC277256CAFD500827006 /* RecipeEditViewController.swift */,
 			);
 			path = Controller;
@@ -290,9 +293,10 @@
 				14BAC232256CACD100827006 /* CategoryViewController.swift in Sources */,
 				14BAC22E256CACD100827006 /* AppDelegate.swift in Sources */,
 				14BAC26E256CAF6000827006 /* RecipeDetailViewController.swift in Sources */,
+				1402D5A3256E6BC90092B7C4 /* Cookbook.xcdatamodeld in Sources */,
 				14BAC230256CACD100827006 /* SceneDelegate.swift in Sources */,
 				14BAC278256CAFD500827006 /* RecipeEditViewController.swift in Sources */,
-				14BAC273256CAF8200827006 /* NewRecipeViewController.swift in Sources */,
+				14BAC273256CAF8200827006 /* YoutubeSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +623,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1402D5A1256E6BC90092B7C4 /* Cookbook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1402D5A2256E6BC90092B7C4 /* Cookbook.xcdatamodel */,
+			);
+			currentVersion = 1402D5A2256E6BC90092B7C4 /* Cookbook.xcdatamodel */;
+			path = Cookbook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 14BAC222256CACD100827006 /* Project object */;
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="category" inverseEntity="Recipe"/>
+    </entity>
+    <entity name="IngredientList" representedClassName="IngredientList" syncable="YES" codeGenerationType="class">
+        <attribute name="ingredientList" optional="YES" attributeType="String"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredientList" inverseEntity="Recipe"/>
+    </entity>
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="youtubeLink" optional="YES" attributeType="URI"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="recipes" inverseEntity="Category"/>
+        <relationship name="ingredientList" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="IngredientList" inverseName="recipe" inverseEntity="IngredientList"/>
+        <relationship name="stepList" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="StepList" inverseName="recipe" inverseEntity="StepList"/>
+    </entity>
+    <entity name="StepList" representedClassName="StepList" syncable="YES" codeGenerationType="class">
+        <attribute name="stepList" optional="YES" attributeType="String"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="stepList" inverseEntity="Recipe"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-332.0681762695312" positionY="-190.4058837890625" width="128" height="73"/>
+        <element name="Recipe" positionX="-26.11383056640625" positionY="-197.7892150878906" width="128" height="118"/>
+        <element name="IngredientList" positionX="-215.5684814453125" positionY="30.56866455078125" width="128" height="73"/>
+        <element name="StepList" positionX="-18" positionY="27" width="128" height="73"/>
+    </elements>
+</model>

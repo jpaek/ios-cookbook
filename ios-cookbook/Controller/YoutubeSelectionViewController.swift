@@ -7,6 +7,6 @@
 
 import UIKit
 
-class NewRecipeViewController: UIViewController {
+class YoutubeSelectionViewController: UITableViewController {
     
 }
