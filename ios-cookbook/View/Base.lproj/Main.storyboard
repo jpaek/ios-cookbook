@@ -230,14 +230,14 @@
                             </wkWebView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-SM-qSR">
                                 <rect key="frame" x="11" y="436" width="383" height="157"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sgu-eO-iER">
                                 <rect key="frame" x="20" y="637" width="374" height="187"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="187" id="FYu-08-vFe"/>
                                 </constraints>
@@ -325,9 +325,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Cp-F2-4TK">
-                                <rect key="frame" x="0.0" y="88" width="414" height="748"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Cp-F2-4TK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="743"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" id="xgn-Du-ZuZ" customClass="RecipeCell" customModule="ios_cookbook" customModuleProvider="target">
@@ -370,9 +369,8 @@
                                     <outlet property="delegate" destination="FRQ-cq-b1U" id="Etu-L8-bBT"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BiE-tj-ZIi">
-                                <rect key="frame" x="0.0" y="827" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BiE-tj-ZIi">
+                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
                                 <items>
                                     <barButtonItem title="Add Recipe" id="7sq-LK-otn">
                                         <connections>
@@ -384,6 +382,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0QD-Vq-3oz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BiE-tj-ZIi" firstAttribute="bottom" secondItem="0QD-Vq-3oz" secondAttribute="bottom" id="Daf-5f-mW0"/>
+                            <constraint firstItem="3Cp-F2-4TK" firstAttribute="leading" secondItem="0QD-Vq-3oz" secondAttribute="leading" id="Ndc-VN-qls"/>
+                            <constraint firstItem="BiE-tj-ZIi" firstAttribute="top" secondItem="0QD-Vq-3oz" secondAttribute="top" constant="734" id="QRg-ex-3of"/>
+                            <constraint firstItem="3Cp-F2-4TK" firstAttribute="top" secondItem="0QD-Vq-3oz" secondAttribute="top" id="R41-4M-pYE"/>
+                            <constraint firstItem="BiE-tj-ZIi" firstAttribute="top" secondItem="3Cp-F2-4TK" secondAttribute="bottom" constant="-9" id="RCh-h5-K9M"/>
+                            <constraint firstItem="BiE-tj-ZIi" firstAttribute="trailing" secondItem="3Cp-F2-4TK" secondAttribute="trailing" id="fR0-7X-9sy"/>
+                            <constraint firstItem="BiE-tj-ZIi" firstAttribute="leading" secondItem="0QD-Vq-3oz" secondAttribute="leading" id="wk0-fp-pzi"/>
+                            <constraint firstItem="0QD-Vq-3oz" firstAttribute="trailing" secondItem="3Cp-F2-4TK" secondAttribute="trailing" id="xVC-LF-Ff3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Stg-kW-80n"/>
                     <connections>
@@ -401,6 +409,9 @@
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
