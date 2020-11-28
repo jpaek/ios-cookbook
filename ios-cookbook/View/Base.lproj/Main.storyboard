@@ -186,7 +186,11 @@
                                 <rect key="frame" x="0.0" y="826" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Create/Edit Recipe without Video" width="323" id="No8-SC-LTE"/>
+                                    <barButtonItem title="Create/Edit Recipe without Video" width="323" id="No8-SC-LTE">
+                                        <connections>
+                                            <action selector="createRecipeWithoutVideo:" destination="JTd-Kz-99e" id="KPV-qg-BoE"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>

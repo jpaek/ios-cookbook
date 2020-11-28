@@ -39,6 +39,13 @@ class YoutubeSelectionViewController: UIViewController, UITableViewDataSource, U
         
     }
     
+    @IBAction func createRecipeWithoutVideo(_ sender: Any) {
+        let editController = self.storyboard!.instantiateViewController(withIdentifier: "RecipeEditViewController") as! RecipeEditViewController
+        editController.name = self.name
+        editController.category = self.category
+        self.navigationController!.pushViewController(editController, animated: true)
+    }
+    
     func displayError(error: Error) {
         let alert = UIAlertController(title: "Error Found", message: error.localizedDescription, preferredStyle: .alert)
 
