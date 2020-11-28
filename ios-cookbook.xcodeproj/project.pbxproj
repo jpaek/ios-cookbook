@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1402D5A3256E6BC90092B7C4 /* Cookbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1402D5A1256E6BC90092B7C4 /* Cookbook.xcdatamodeld */; };
+		1496D2232571AD3900EAC888 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496D2222571AD3900EAC888 /* DataController.swift */; };
+		1496D22C2571B22000EAC888 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496D22B2571B22000EAC888 /* CategoryCell.swift */; };
+		1496D2342571B22F00EAC888 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496D2332571B22F00EAC888 /* RecipeCell.swift */; };
+		1496D23A2571B27900EAC888 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496D2392571B27900EAC888 /* Cell.swift */; };
+		1496D2462571C08800EAC888 /* Category+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496D2452571C08800EAC888 /* Category+Extensions.swift */; };
+		1496D2512571DF2E00EAC888 /* Recipe+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496D2502571DF2E00EAC888 /* Recipe+Extensions.swift */; };
+		1496D25B2571F6E900EAC888 /* YoutubeInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1496D25A2571F6E900EAC888 /* YoutubeInfo.plist */; };
+		1496D2602571F79300EAC888 /* YoutubeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496D25F2571F79300EAC888 /* YoutubeClient.swift */; };
+		1496D2682572186000EAC888 /* YoutubeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496D2672572186000EAC888 /* YoutubeResponse.swift */; };
 		14BAC22E256CACD100827006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC22D256CACD100827006 /* AppDelegate.swift */; };
 		14BAC230256CACD100827006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC22F256CACD100827006 /* SceneDelegate.swift */; };
 		14BAC232256CACD100827006 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BAC231256CACD100827006 /* CategoryViewController.swift */; };
@@ -41,6 +50,15 @@
 
 /* Begin PBXFileReference section */
 		1402D5A2256E6BC90092B7C4 /* Cookbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cookbook.xcdatamodel; sourceTree = "<group>"; };
+		1496D2222571AD3900EAC888 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		1496D22B2571B22000EAC888 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		1496D2332571B22F00EAC888 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		1496D2392571B27900EAC888 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		1496D2452571C08800EAC888 /* Category+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+Extensions.swift"; sourceTree = "<group>"; };
+		1496D2502571DF2E00EAC888 /* Recipe+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Extensions.swift"; sourceTree = "<group>"; };
+		1496D25A2571F6E900EAC888 /* YoutubeInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = YoutubeInfo.plist; sourceTree = "<group>"; };
+		1496D25F2571F79300EAC888 /* YoutubeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeClient.swift; sourceTree = "<group>"; };
+		1496D2672572186000EAC888 /* YoutubeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeResponse.swift; sourceTree = "<group>"; };
 		14BAC22A256CACD100827006 /* ios-cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-cookbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BAC22D256CACD100827006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BAC22F256CACD100827006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,10 +104,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1496D2212571AD1C00EAC888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1496D2562571EECF00EAC888 /* Youtube Responses */,
+				1496D2552571EEC500EAC888 /* Youtube Client */,
+				1496D2442571C07300EAC888 /* Managed Object Extensions */,
+				1402D5A1256E6BC90092B7C4 /* Cookbook.xcdatamodeld */,
+				1496D2222571AD3900EAC888 /* DataController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1496D22A2571B21200EAC888 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1496D22B2571B22000EAC888 /* CategoryCell.swift */,
+				1496D2332571B22F00EAC888 /* RecipeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1496D2382571B26B00EAC888 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1496D2392571B27900EAC888 /* Cell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1496D2442571C07300EAC888 /* Managed Object Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1496D2452571C08800EAC888 /* Category+Extensions.swift */,
+				1496D2502571DF2E00EAC888 /* Recipe+Extensions.swift */,
+			);
+			path = "Managed Object Extensions";
+			sourceTree = "<group>";
+		};
+		1496D2552571EEC500EAC888 /* Youtube Client */ = {
+			isa = PBXGroup;
+			children = (
+				1496D25F2571F79300EAC888 /* YoutubeClient.swift */,
+			);
+			path = "Youtube Client";
+			sourceTree = "<group>";
+		};
+		1496D2562571EECF00EAC888 /* Youtube Responses */ = {
+			isa = PBXGroup;
+			children = (
+				1496D2672572186000EAC888 /* YoutubeResponse.swift */,
+			);
+			path = "Youtube Responses";
+			sourceTree = "<group>";
+		};
 		14BAC221256CACD100827006 = {
 			isa = PBXGroup;
 			children = (
-				1402D5A1256E6BC90092B7C4 /* Cookbook.xcdatamodeld */,
 				14BAC22C256CACD100827006 /* ios-cookbook */,
 				14BAC243256CACD300827006 /* ios-cookbookTests */,
 				14BAC24E256CACD300827006 /* ios-cookbookUITests */,
@@ -110,12 +181,14 @@
 		14BAC22C256CACD100827006 /* ios-cookbook */ = {
 			isa = PBXGroup;
 			children = (
+				1496D2212571AD1C00EAC888 /* Model */,
 				14BAC264256CAD8400827006 /* Controller */,
 				14BAC263256CAD7500827006 /* View */,
 				14BAC22D256CACD100827006 /* AppDelegate.swift */,
 				14BAC22F256CACD100827006 /* SceneDelegate.swift */,
 				14BAC236256CACD300827006 /* Assets.xcassets */,
 				14BAC238256CACD300827006 /* LaunchScreen.storyboard */,
+				1496D25A2571F6E900EAC888 /* YoutubeInfo.plist */,
 				14BAC23B256CACD300827006 /* Info.plist */,
 			);
 			path = "ios-cookbook";
@@ -142,6 +215,8 @@
 		14BAC263256CAD7500827006 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1496D2382571B26B00EAC888 /* Protocols */,
+				1496D22A2571B21200EAC888 /* Cells */,
 				14BAC233256CACD100827006 /* Main.storyboard */,
 			);
 			path = View;
@@ -262,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1496D25B2571F6E900EAC888 /* YoutubeInfo.plist in Resources */,
 				14BAC23A256CACD300827006 /* LaunchScreen.storyboard in Resources */,
 				14BAC237256CACD300827006 /* Assets.xcassets in Resources */,
 				14BAC235256CACD100827006 /* Main.storyboard in Resources */,
@@ -293,10 +369,18 @@
 				14BAC232256CACD100827006 /* CategoryViewController.swift in Sources */,
 				14BAC22E256CACD100827006 /* AppDelegate.swift in Sources */,
 				14BAC26E256CAF6000827006 /* RecipeDetailViewController.swift in Sources */,
+				1496D2232571AD3900EAC888 /* DataController.swift in Sources */,
+				1496D2462571C08800EAC888 /* Category+Extensions.swift in Sources */,
+				1496D2602571F79300EAC888 /* YoutubeClient.swift in Sources */,
+				1496D23A2571B27900EAC888 /* Cell.swift in Sources */,
+				1496D2512571DF2E00EAC888 /* Recipe+Extensions.swift in Sources */,
 				1402D5A3256E6BC90092B7C4 /* Cookbook.xcdatamodeld in Sources */,
+				1496D2342571B22F00EAC888 /* RecipeCell.swift in Sources */,
 				14BAC230256CACD100827006 /* SceneDelegate.swift in Sources */,
+				1496D2682572186000EAC888 /* YoutubeResponse.swift in Sources */,
 				14BAC278256CAFD500827006 /* RecipeEditViewController.swift in Sources */,
 				14BAC273256CAF8200827006 /* YoutubeSelectionViewController.swift in Sources */,
+				1496D22C2571B22000EAC888 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
