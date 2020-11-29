@@ -29,6 +29,7 @@ Google API Key for Youtube Data API
 1. Open the app
 2. Click an existing Category or create a new category by clicking **Add Category** button at the bottom
 ![Category](category.png | width=250)
+<img src="category.png" width="250" />
 
 3. Click **Add Recipe** button at the bottom and enter the name of the recipe
 ![Add Recipe](new_recipe.png | width=250
