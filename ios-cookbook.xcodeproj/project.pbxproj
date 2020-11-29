@@ -60,11 +60,11 @@
 		1496D25A2571F6E900EAC888 /* YoutubeInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = YoutubeInfo.plist; sourceTree = "<group>"; };
 		1496D25F2571F79300EAC888 /* YoutubeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeClient.swift; sourceTree = "<group>"; };
 		1496D2672572186000EAC888 /* YoutubeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeResponse.swift; sourceTree = "<group>"; };
-		1497E61C25732AD300AA3828 /* edit recipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit recipe.png"; sourceTree = "<group>"; };
+		1497E61C25732AD300AA3828 /* edit_recipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit_recipe.png; sourceTree = "<group>"; };
 		1497E61D25732AD400AA3828 /* category.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category.png; sourceTree = "<group>"; };
 		1497E61E25732AD400AA3828 /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = "<group>"; };
 		1497E61F25732AD400AA3828 /* Youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Youtube.png; sourceTree = "<group>"; };
-		1497E62025732AD400AA3828 /* new recipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new recipe.png"; sourceTree = "<group>"; };
+		1497E62025732AD400AA3828 /* new_recipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_recipe.png; sourceTree = "<group>"; };
 		14BAC22A256CACD100827006 /* ios-cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-cookbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BAC22D256CACD100827006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BAC22F256CACD100827006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,8 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				1497E61D25732AD400AA3828 /* category.png */,
-				1497E61C25732AD300AA3828 /* edit recipe.png */,
-				1497E62025732AD400AA3828 /* new recipe.png */,
+				1497E61C25732AD300AA3828 /* edit_recipe.png */,
+				1497E62025732AD400AA3828 /* new_recipe.png */,
 				1497E61E25732AD400AA3828 /* recipes.png */,
 				1497E61F25732AD400AA3828 /* Youtube.png */,
 				14958F102572C93800477FB0 /* README.md */,

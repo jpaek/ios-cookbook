@@ -28,20 +28,20 @@ Google API Key for Youtube Data API
 ### Create a recipe
 1. Open the app
 2. Click an existing Category or create a new category by clicking **Add Category** button at the bottom
-![Category](category.png)
+![Category](category.png =250x)
 
 3. Click **Add Recipe** button at the bottom and enter the name of the recipe
-![Add Recipe](new recipe.png)
+![Add Recipe](new_recipe.png =250x)
 4. Either click one of the youtube video in the search list or click **Create/Edit Recipe without Video** button
-![Youtube selection](Youtube.png)
+![Youtube selection](Youtube.png =250x)
 5. Enter **Ingredient** and **Step** in the respective text box
-![Edit Recipe](edit recipe.png)
+![Edit Recipe](edit_recipe.png =250x)
 6. Click **Save**
 
 ### View a recipe
 1. Open the app
 2. Click on an existing category 
 3. Click on an existing recipe
-![Recipe](recipes.png)
+![Recipe](recipes.png =250x)
 4. To edit a recipe, click **Edit** button
 
